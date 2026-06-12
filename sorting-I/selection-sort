@@ -1,0 +1,28 @@
+// selection sort - pick the smallest element and place it at the front
+// TC = O(n^2) by summantion     SC = O(1)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int arr[] = {13, 46, 24, 52, 20, 9};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    for(int i=0; i<n-1; i++){
+        int minIndex = i;
+        
+        for(int j=i+1; j<n; j++){
+            if(arr[j] < arr[minIndex]){
+                swap(arr[i], arr[j]);
+                minIndex = j;
+            }
+        }
+
+    }
+
+    for(int i=0; i<n; i++){
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
