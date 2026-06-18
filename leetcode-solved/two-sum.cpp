@@ -1,5 +1,5 @@
 /*
-Problem: Two Sum
+Leetcode 1 - Two Sum
 Approach: Hash Map
 TC: O(n)
 SC: O(n)
