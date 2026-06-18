@@ -1,5 +1,5 @@
 /*
-Problem: Palindrome Number
+Leetcode 9 - Palindrome Number
 Approach: Reverse the number and compare with original
 TC: O(log n)
 SC: O(1)
