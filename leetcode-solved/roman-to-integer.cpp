@@ -1,8 +1,17 @@
 /*
 Leetcode 13 - Roman to Integer
-Approach: unordered_map
-TC: O(n)
-SC: O(1)
+
+Algorithm:
+1. Store the value of each Roman numeral in an unordered_map.
+2. Traverse the string from left to right.
+3. If the current numeral is smaller than the next numeral,
+   subtract its value from the answer.
+4. Otherwise, add its value to the answer.
+5. Return the final integer value.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
 Difficulty: Easy
 */
 
