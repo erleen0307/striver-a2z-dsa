@@ -1,8 +1,15 @@
 /*
 Leetcode 9 - Palindrome Number
-Approach: Reverse the number and compare with original
-TC: O(log n)
-SC: O(1)
+
+Algorithm:
+1. Store the original number.
+2. Reverse its digits using modulo and division.
+3. Compare the reversed number with the original.
+4. Return true if they are equal, otherwise false.
+
+Time Complexity: O(log₁₀ n)
+Space Complexity: O(1)
+
 Difficulty: Easy
 */
 
