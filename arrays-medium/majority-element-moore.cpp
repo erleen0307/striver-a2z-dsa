@@ -35,7 +35,6 @@ int majorityElement(vector<int> &nums){
     if(cnt1 > n/2){
         return el;
     }
-
     return -1; // if not found
 }
 
