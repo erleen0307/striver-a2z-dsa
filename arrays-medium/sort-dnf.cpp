@@ -19,7 +19,6 @@ vector<int> sortArr(vector<int> &nums){
         } else if(nums[mid] == 2){
             swap(nums[mid], nums[high]);
             high--;
-            // don't do mid++ since we haven't checked the mid pos after swapping yet
         }
     }
 
