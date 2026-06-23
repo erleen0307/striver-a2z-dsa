@@ -7,7 +7,6 @@ using namespace std;
 
 int majorityElement(vector<int> &nums){
     int n = nums.size();
-
     int el;
     int cnt = 0;
 
