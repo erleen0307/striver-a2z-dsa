@@ -32,7 +32,6 @@ int main(){
     for(int x : res){
         cout << x << " ";
     }
-
     return 0;
 }
 
