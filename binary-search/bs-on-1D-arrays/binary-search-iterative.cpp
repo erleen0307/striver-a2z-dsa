@@ -1,4 +1,4 @@
-// Binary Search - Iterative method
+// Binary Search - Iterative method (assuming array does not contain duplicates)
 // TC = O(logN)    SC = O(1)
 
 #include <bits/stdc++.h>
