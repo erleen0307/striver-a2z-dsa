@@ -4,19 +4,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void mergeSort(vector<int>& arr, int start, int end){
-    if(start <= end){
-        return;
-    } // stop splitting if we reach a single element
-    
-    int mid = (start + end) / 2;
-    
-    mergeSort(arr, start, mid); // call to split left half further
-    mergeSort(arr, mid+1, end); // call to split right half further
-
-    merge(arr, start, mid, end);
-}
-
 void merge(vector<int>& arr, int start, int mid, int end){
     vector<int> temp;
 
@@ -49,6 +36,19 @@ void merge(vector<int>& arr, int start, int mid, int end){
     for(int i=start; i<=end; i++){
         arr[i] = temp[i-start];
     }
+}
+
+void mergeSort(vector<int>& arr, int start, int end){
+    if(start >= end){
+        return;
+    } // stop splitting if we reach a single element
+    
+    int mid = (start + end) / 2;
+    
+    mergeSort(arr, start, mid); // call to split left half further
+    mergeSort(arr, mid+1, end); // call to split right half further
+
+    merge(arr, start, mid, end);
 }
 
 int main(){
